@@ -1,0 +1,156 @@
+body {
+    background-color: #FDF5E6!important;
+}
+
+.conversation-wrap
+{
+    padding:0;
+    overflow: hidden;
+    height: 98%;
+    box-shadow: 0 0 3px #ddd!important;
+    padding-left: 15px!important;
+    padding-right: 1px!important;
+
+    .contact-list {
+
+        height: 95%;
+        overflow: auto;
+
+        .contact
+        {
+            padding:5px;
+            margin:0;
+            margin-top: 15px;
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+
+            img {
+                border-radius: 30px;
+                margin-right: 8px;
+            }
+
+            h5 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.message-wrap
+{
+    box-shadow: 0 0 3px #ddd;
+    padding:0;
+    height: 98%;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+
+    .msg-wrap
+    {
+        padding:10px;
+        height: 90%;
+        overflow: auto;
+        color:#003bb3;
+        font-weight: 700;
+        background-color: #FFF;
+
+        .msg
+        {
+            padding:5px;
+            margin:0;
+
+            img {
+                margin-right: 6px;
+                border-radius: 30px;
+            }
+
+            h5
+            {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+
+            div {
+                display: table-cell;
+                vertical-align: top;
+                width: 10000px;
+            }
+
+            small {
+                color: #000;
+                font-weight: 200;
+            }
+
+            .time
+            {
+                color:#bfbfbf;
+            }
+        }
+    }
+}
+
+.send-wrap
+{
+    border-top: 1px solid #eee;
+    position: relative;
+    padding: 11px;
+
+    .send-message
+    {
+        width: 91%!important;
+    }
+}
+
+.container-chat {
+    width: 100%;
+    .row {
+        margin-right: 0;
+    }
+}
+
+.loged-user {
+    margin-top: 6px;
+    border-bottom: 2px solid #ddd;
+    padding: 0 0 4px 4px;
+
+    .logout-style {
+      float: right;
+      padding-right: 4px;
+      display: none;
+    }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 994px) {
+
+    html {
+        overflow: hidden;
+    }
+
+    .container-chat {
+        overflow: hidden;
+    }
+
+    .message-wrap {
+        height: 57%;
+    }
+
+    .contact-list {
+        height: 78%!important;
+    }
+
+    .conversation-wrap {
+        height: 40%!important;
+    }
+
+    .send-wrap {
+        padding-top: 10px;
+        padding-left: 20px;
+
+        .send-message {
+            width: 82% !important;
+        }
+    }
+}
